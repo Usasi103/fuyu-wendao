@@ -1,0 +1,32 @@
+{
+  "name": "fuyu-wendao",
+  "version": "0.1.0",
+  "private": false,
+  "description": "《浮屿问道》- 融合砍树开箱、浮空洞天经营与小队即时斗法的开源修仙挂机游戏",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "node server/saveServer.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "lucide-react": "^0.511.0",
+    "pixi.js": "^8.9.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "zustand": "^5.0.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.7",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "tailwindcss": "^4.1.7",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.3"
+  }
+}

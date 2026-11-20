@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #070e12;
+    color: #f3ead3;
+    font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button,
+  canvas {
+    touch-action: manipulation;
+  }
+}
+
+.font-xianxia {
+  font-family: "STKaiti", "KaiTi", "Noto Serif SC", "Songti SC", "STSong", "SimSun", Georgia, serif;
+}
+
+.xianxia-panel {
+  background: linear-gradient(180deg, rgba(16, 30, 36, 0.95) 0%, rgba(9, 17, 21, 0.98) 100%);
+  border: 1px solid rgba(208, 164, 86, 0.45);
+  box-shadow:
+    inset 0 0 0 1px rgba(208, 164, 86, 0.14),
+    0 10px 28px rgba(0, 0, 0, 0.65);
+}
+
+.xianxia-card {
+  background: linear-gradient(180deg, rgba(21, 37, 43, 0.92) 0%, rgba(12, 22, 27, 0.96) 100%);
+  border: 1px solid rgba(188, 146, 74, 0.36);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 226, 158, 0.08),
+    inset 0 0 0 1px rgba(188, 146, 74, 0.08);
+}
+
+.xianxia-pill {
+  background: linear-gradient(180deg, rgba(15, 29, 34, 0.92) 0%, rgba(8, 16, 20, 0.95) 100%);
+  border: 1px solid rgba(188, 146, 74, 0.34);
+  box-shadow: inset 0 1px 0 rgba(255, 235, 180, 0.08);
+}
+
+.xianxia-btn-gold {
+  background: linear-gradient(180deg, #f5cd6d 0%, #cf902c 55%, #b3721b 100%);
+  color: #251203;
+  border: 1px solid #ffe49e;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 252, 232, 0.65),
+    0 4px 12px rgba(207, 144, 44, 0.28);
+}
+.xianxia-btn-gold:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.xianxia-btn-jade {
+  background: linear-gradient(180deg, #1d6452 0%, #103d32 100%);
+  color: #dcfce7;
+  border: 1px solid rgba(94, 212, 178, 0.55);
+  box-shadow: inset 0 1px 0 rgba(167, 243, 208, 0.22);
+}
+.xianxia-btn-jade:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.xianxia-btn-crimson {
+  background: linear-gradient(180deg, #c93737 0%, #831818 100%);
+  color: #fef3c7;
+  border: 1px solid rgba(245, 194, 107, 0.65);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 210, 210, 0.25),
+    0 4px 14px rgba(185, 28, 28, 0.4);
+}
+.xianxia-btn-crimson:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spinSlow 18s linear infinite;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 18, 22, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(208, 164, 86, 0.32);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(208, 164, 86, 0.6);
+}
